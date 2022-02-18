@@ -25,16 +25,16 @@ int main()
     	    		scanf("%lf%lf%lf", &a1, &a2, &a3);
     	    		if (a3 <= a1 + a2)
     	    		{
-    	        	p = a1 + a2 + a3;
-    	        	p2 = p / 2;
-               		s = sqrt(p2 * (p2 - a1) * (p2 - a2) * (p2 - a3));
-                	printf("S triangle: %.4lf\nPerimetr triangle: %.4lf\n", s, p);
-                	break;
+	    	        	p = a1 + a2 + a3;
+	    	        	p2 = p / 2;
+		       		s = sqrt(p2 * (p2 - a1) * (p2 - a2) * (p2 - a3));
+		        	printf("S triangle: %.4lf\nPerimetr triangle: %.4lf\n", s, p);
+		        	break;
     	    		}
     	    		else
     	    		{
-		  	printf("Error. ");
-    	        	continue;
+		  		printf("Error. ");
+    	        		continue;
     	    		}
 		}
 	}
