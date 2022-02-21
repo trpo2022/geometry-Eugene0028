@@ -10,7 +10,7 @@ void circle()
     {
         p = M_PI * r * 2;
         s = M_PI * r * r;
-        printf("Perimetr: %.2f\nS: %.2f ", s, p);
+        printf("Perimetr: %.2f\nS: %.2f \n", s, p);
     }
     else
     {
@@ -30,7 +30,7 @@ void triangle()
             p = a + b + c;
             p1 = p / 2;
             s = sqrt(p1 * (p1-a) * (p1-b) * (p1-c));
-            printf("Perimetr: %.2f\nS: %.2f", p, s);
+            printf("Perimetr: %.2f\nS: %.2f\n", p, s);
         }
         else
         {
@@ -54,7 +54,7 @@ void poligon()
         {
             p = a * 4;
             s = a * a;
-            printf("Perimetr: %.2f\nS: %.2f", p, s);
+            printf("Perimetr: %.2f\nS: %.2f\n", p, s);
         }
         else
         {
