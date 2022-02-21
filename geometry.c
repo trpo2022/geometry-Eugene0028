@@ -69,30 +69,20 @@ void poligon()
 
 int main() 
 {
-    int a;
-    while(1){
+	int a;
         printf("1. Cirle\n2. Triangle\n3. Poligon\nChoose your figure: ");
-        scanf("%d", &a);
+        scanf(" %d", &a);
         if (a == 1)
         {
-            circle();
-            break;
+		circle();
         }
         if (a == 2)
         {
-            triangle();
-            break;
+		triangle();
         }
         if (a == 3)
         {
-            poligon();
-            break;
+		poligon();
         }
-        else
-        {
-            printf("Error\n");
-            continue;
-        }
-    }
-    return 0;
+	return 0;
 }
