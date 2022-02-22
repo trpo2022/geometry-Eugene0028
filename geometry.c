@@ -14,7 +14,7 @@ void circle()
     }
     else
     {
-        printf("Error");
+        printf("Error\n");
     }
 }
 
@@ -34,12 +34,12 @@ void triangle()
         }
         else
         {
-            printf("Error");
+            printf("Error\n");
         }
     }
     else
     {
-        printf("Error");
+        printf("Error\n");
     }
 }
 
@@ -58,12 +58,12 @@ void poligon()
         }
         else
         {
-            printf("Error");
+            printf("Error\n");
         }
     }
     else
     {
-        printf("Error");
+        printf("Error\n");
     }
 }
 
@@ -84,5 +84,9 @@ int main()
         {
 		poligon();
         }
+	else
+	{
+	printf("Error\n");
+	}
 	return 0;
 }
