@@ -50,10 +50,10 @@ void poligon()
     scanf(" poligon(%f, %f, %f, %f)", &a, &b, &c, &d);
     if (a > 0 &&  b > 0 && c > 0 && d > 0)
     {
-        if (a == b && b == c && c == d && d == a && a == c && b == d)
+        if (a == c && b == d )
         {
-            p = a * 4;
-            s = a * a;
+            p = (a + b) * 2;
+            s = a * b;
             printf("Perimetr: %.2f\nS: %.2f\n", p, s);
         }
         else
@@ -70,23 +70,30 @@ void poligon()
 int main() 
 {
 	int a;
-        printf("1. Cirle\n2. Triangle\n3. Poligon\nChoose your figure: ");
-        scanf(" %d", &a);
-        if (a == 1)
-        {
-		circle();
-        }
-        if (a == 2)
-        {
-		triangle();
-        }
-        if (a == 3)
-        {
-		poligon();
-        }
-	else
+	while(1)
 	{
-	printf("Error\n");
+		printf("1. Cirle\n2. Triangle\n3. Poligon\nChoose your figure: ");
+		scanf(" %d", &a);
+		if (a == 1)
+		{
+			circle();
+			break;
+		}
+		if (a == 2)
+		{
+			triangle();
+			break;
+		}
+		if (a == 3)
+		{
+			poligon();
+			break;
+		}
+		else
+		{
+		printf("Error\n");
+		return 0;
+		}
 	}
 	return 0;
 }
