@@ -7,7 +7,7 @@ int main()
     double x0, y0, r, x1, y1, x2, y2, x3, y3;
     printf("Enter (x y rad) for circle\n");
     scanf("%lf %lf %lf", &x0, &y0, &r);
-    if (r < 0){
+    if (r < 0) {
         printf("Error");
         return 1;
     }
